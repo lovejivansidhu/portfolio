@@ -1,13 +1,47 @@
 @charset "utf-8";
 /* CSS Document */
-
+/*Body and Footer CSS*/
+html {
+	font-family: "Roboto", sans-serif;	
+}
 body {
-	background-color: lightgrey;
+	background-color: #E7ECEF;
 	overflow-x: auto;
-	overflow-y: scroll;
+	overflow-y: auto;
 }
 footer {
 	text-align: center;
-	border-top: thin dashed;
-	margin-top: 100%;
+	position: absolute;
+	width: 100%;
+	padding-top: 5%;
+}
+/*Nav Bar*/
+body {margin: 0;}
+
+ul.topnav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #8B8C89;
+}
+ul.topnav li {
+	float: left;
+}
+ul.topnav li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+ul.topnav li a:hover:not(.active) {
+	background-color: #A3CEF1;
+}
+ul.topnav li a.active {
+	background-color: #6096BA;
+}
+@media screen and (max-width: 1000px) {
+	ul.topnav li.right, 
+	ul.topnav li {float: none;}
 }
