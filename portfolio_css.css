@@ -17,6 +17,7 @@ footer {
 }
 /*Nav Bar*/
 body {margin: 0;}
+
 ul.topnav {
 	list-style-type: none;
 	margin: 0;
@@ -37,7 +38,6 @@ ul.topnav li a {
 ul.topnav li a:hover:not(.active) {
 	background-color: #A3CEF1;
 }
-
 ul.topnav li a.active {
 	background-color: #6096BA;
 }
