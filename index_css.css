@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document */
+/*Body and Footer CSS*/
+html {
+	font-family: "Roboto", sans-serif;	
+}
+body {
+	background-color: #E7ECEF;
+	overflow-x: auto;
+	overflow-y: auto;
+}
+footer {
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	padding-top: 5%;
+}
+/*Nav Bar*/
+body {margin: 0;}
+
+ul.topnav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #8B8C89;
+}
+ul.topnav li {
+	float: left;
+}
+ul.topnav li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+ul.topnav li a:hover:not(.active) {
+	background-color: #A3CEF1;
+}
+ul.topnav li a.active {
+	background-color: #6096BA;
+}
+@media screen and (max-width: 1000px) {
+	ul.topnav li.right, 
+	ul.topnav li {float: none;}
+}
+/*Hero Image Banner*/
+body, html {
+	height: 100%;
+	margin: 0;
+}
+.hero-image {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Assets/heroImage.jpg");
+	height: 75%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.hero-text {
+	text-align: center;
+	position: absolute;
+	top: 75%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+
+.hero-text .button {
+	border: none;
+	outline: 0;
+	text-decoration: none;
+	display: inline-block;
+	padding: 10px 25px;
+	transition:  1s;
+	color: black;
+	background-color: #ddd;
+	text-align: center;
+	cursor: pointer;
+}
+
+.hero-text .button:hover {
+	background-color: #555;
+	padding: 15px 30px;
+	transition:  1s;
+	color: white;
+}
+#nameBar{
+	font-size: 50px;
+}
+#statusBar{
+	font-size: 15px;
+}
+@media screen and (max-width: 1000px) {
+	#statusBar{
+		font-size: 10px;
+	}
+	#nameBar{
+		font-size: 35px;
+	}
+}

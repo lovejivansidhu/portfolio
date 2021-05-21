@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color: lightgrey;
+	overflow-x: auto;
+	overflow-y: scroll;
+}
+footer {
+	text-align: center;
+	border-top: thin dashed;
+	margin-top: 100%;
+}
