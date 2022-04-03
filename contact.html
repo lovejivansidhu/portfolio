@@ -1,11 +1,11 @@
 <!doctype html>
 <html>
-	
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="contact_css.css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 		<title>Lovejivan Sidhu - Contact</title>
 	</head>
@@ -19,12 +19,24 @@
 	<div class="contactME">
 		<center>
 			<h1 id="contactMain">Contact Me Today!</h1>
-			<p id="contactSecond">Below, you can find both my Resume, and my contact details!</p>
-
-			<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="lovejivan-sidhu-9b484919a" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://ca.linkedin.com/in/lovejivan-sidhu-9b484919a?trk=profile-badge">Lovejivan Sidhu</a></div>
-              
 		</center>
-		
+	</div>
+	
+	<div class="card">
+	  <img src="Assets/profileContact.png" alt="Lovejivan Sidhu" style="width:100%">
+	  <h1>Lovejian Sidhu</h1>
+	  <p class="title">Developer & Media Manager</p>
+	  <p style="color: #181818" >York University</p>
+	  <div style="margin: 24px 0;">
+		<a class="iconbutton" href="www.linkedin.com/in/lovejivansidhu"><i class="fa fa-linkedin"></i></a> 
+		<a class="iconbutton" href="https://twitter.com/lovejivansidhu"><i class="fa fa-twitter"></i></a>  
+		<a class="iconbutton" href="https://www.instagram.com/lovejivansidhu/"><i class="fa fa-instagram"></i></a>
+		<a class="iconbutton" href="https://linktr.ee/Lovejivan_Sidhu"><i class="fa fa-paperclip"></i></a>
+	  </div>
+	  <button class="contactDrop">Contact</button>
+		<div class="contactDropContent">
+			<p>lovejivansidhu@gmail.com</p>
+		</div>
 	</div>
 </body>
 	<footer>
@@ -32,4 +44,20 @@
 			<p class="footer">Copyright Lovejivan Sidhu 2022</p>
 		</div>	
 	</footer>
+<script>
+	var coll = document.getElementsByClassName("contactDrop");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+	  coll[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var content = this.nextElementSibling;
+		if (content.style.maxHeight){
+		  content.style.maxHeight = null;
+		} else {
+		  content.style.maxHeight = content.scrollHeight + "px";
+		} 
+	  });
+	}
+</script>
 </html>

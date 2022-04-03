@@ -24,6 +24,7 @@ ul.topnav {
 	padding: 0;
 	overflow: hidden;
 	background-color: #8B8C89;
+	font-size: 20px;
 }
 ul.topnav li {
 	float: left;
@@ -37,6 +38,7 @@ ul.topnav li a {
 }
 ul.topnav li a:hover:not(.active) {
 	background-color: #A3CEF1;
+	transition: 0.2s;
 }
 ul.topnav li a.active {
 	background-color: #6096BA;
