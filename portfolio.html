@@ -19,53 +19,74 @@
 		  <li><a href="contact.html">Contact</a></li>
 		</ul>
 		<div class="timeline">
-			<div class="container left">
-				<div class="content">
-					<h1>2021</h1>
-					<dl>
-						<dt><h2>Projects</h2></dt>
-						<dt>Working with various political candidites in Calgary including:</dt>
-						<ul>
-							<li>George Chahal</li>
-							<li>Raj Dhaliwal</li>
-							<li>Jyoti Gondek</li>
-						</ul>
-						<dt>Skills</dt>
-						<dd></dd>
-					</dl>
-				</div>
-			</div>
 			<div class="container right">
 				<div class="content">
-					<h2>2020</h2>
-					<dl>
-						<dt>Projects</dt>
-						<dd></dd>
-						<dt>Skills</dt>
-						<dd></dd>
-					</dl>
+					<button class="yearButton"><h1>2022</h1></button>
+						<div class="yearDropContent">
+							<dl>
+								<dt>Projects</dt>
+								<dd></dd>
+								<dt>Skills</dt>
+								<dd></dd>
+							</dl>
+					</div>
 				</div>
 			</div>
 			<div class="container left">
 				<div class="content">
-					<h2>2019</h2>
-					<dl>
-						<dt>Projects</dt>
-						<dd></dd>
-						<dt>Skills</dt>
-						<dd></dd>
-					</dl>
+					<button class="yearButton"><h1>2021</h1></button>
+						<div class="yearDropContent">
+							<dl>
+							<dt><h2>Projects</h2></dt>
+							<dt>Working with various political candidites in Calgary including:</dt>
+							<ul>
+								<li>George Chahal</li>
+								<li>Raj Dhaliwal</li>
+								<li>Jyoti Gondek</li>
+							</ul>
+							<dt>Skills</dt>
+							<dd></dd>
+							</dl>
+						</div>
 				</div>
 			</div>
 			<div class="container right">
 				<div class="content">
-					<h2>2018</h2>
-					<dl>
-						<dt>Projects</dt>
-						<dd></dd>
-						<dt>Skills</dt>
-						<dd></dd>
-					</dl>
+					<button class="yearButton"><h1>2020</h1></button>
+						<div class="yearDropContent">
+							<dl>
+								<dt>Projects</dt>
+								<dd></dd>
+								<dt>Skills</dt>
+								<dd></dd>
+							</dl>
+					</div>
+				</div>
+			</div>
+			<div class="container left">
+				<div class="content">
+					<button class="yearButton"><h1>2019</h1></button>
+						<div class="yearDropContent">
+								<dl>
+								<dt>Projects</dt>
+								<dd></dd>
+								<dt>Skills</dt>
+								<dd></dd>
+							</dl>
+					</div>
+				</div>
+			</div>
+			<div class="container right">
+				<div class="content">
+					<button class="yearButton"><h1>2018</h1></button>
+						<div class="yearDropContent">
+						<dl>
+							<dt>Projects</dt>
+							<dd></dd>
+							<dt>Skills</dt>
+							<dd></dd>
+						</dl>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -75,5 +96,21 @@
 			<p class="footer">Copyright Lovejivan Sidhu 2022</p>
 		</div>	
 	</footer>
+<script>
+	var coll = document.getElementsByClassName("yearButton");
+	var i;
+
+	for (i = 0; i < coll.length; i++) {
+	  coll[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var content = this.nextElementSibling;
+		if (content.style.maxHeight){
+		  content.style.maxHeight = null;
+		} else {
+		  content.style.maxHeight = content.scrollHeight + "px";
+		} 
+	  });
+	}
+</script>
 </html>
 

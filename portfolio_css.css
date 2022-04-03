@@ -124,6 +124,7 @@ ul.topnav li a.active {
 	background-color: #A3CEF1;
 	position: relative;
 	border-radius: 6px;
+	
 }
 @media screen and (max-width: 1000px) {
 	.timeline::after {
@@ -147,4 +148,21 @@ ul.topnav li a.active {
 	.right {
 		left: 0%;
 	}
+}
+.yearButton {
+	border: none;
+	outline: 0;
+	display: inline-block;
+	padding: 8px;
+	background-color: transparent;
+	cursor: pointer;
+	width: 100%;
+}
+
+.yearDropContent {
+	padding: 0 18px;
+	max-height: 0;
+	overflow: hidden;
+	background-color: transparent;
+	transition: max-height 0.2s ease-out;
 }
