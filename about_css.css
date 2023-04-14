@@ -82,10 +82,10 @@ ul.topnav li a.active {
 		padding: 0 5% 5% 5%;
 	}
 	#textAbout{
-		font-size: 1.7vw;
+		font-size: 1.5vw;
 	}
 	#textName{
-		font-size: 2vw;
+		font-size: 1.5vw;
 	}
 	
 }
@@ -100,10 +100,47 @@ ul.topnav li a.active {
 		padding-top: 0px;
 	}
 		#textAbout{
-		font-size: 4vw;
+		font-size: 2vw;
 	}
 	#textName{
 		font-size: 5vw;
+	}
+	#textRight{
+		padding: 0 5% 5% 5%;
+	}
+}
+/*Width less than 500*/
+@media screen and (min-width: 500px){
+
+	#textRight{
+		padding: 0 5% 5% 5%;
+	}
+	#textAbout{
+		font-size: 1.25vw;
+	}
+	#textName{
+		font-size: 1.5vw;
+	}
+	
+}
+@media screen and (max-width: 999px) {
+	#tabLeft{
+		width: 100%;
+	}
+	#tabRight{
+		width: 100%;
+	}
+	.aboutHeader{
+		padding-top: 0px;
+	}
+		#textAbout{
+		font-size: 2vw;
+		text-align: justify;
+	}
+	#textName{
+		font-size: 2.5vw;
+		text-align: center;
+		
 	}
 	#textRight{
 		padding: 0 5% 5% 5%;
